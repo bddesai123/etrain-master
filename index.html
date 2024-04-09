@@ -992,24 +992,28 @@ fields of educational assistance, online education, offline education, etc.
               <p>
                 Subscribe to our newsletter for exclusive updates, promotions, and insights from +Prime Education. Stay informed and ahead in your educational journey!
               </p>
-              <form action="#">
-                <div class="form-group">
-                  <div class="input-group mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter email address"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Enter email address'"
-                    />
-                    <div class="input-group-append">
-                      <button class="btn btn_1" type="button">
-                        <i class="ti-angle-right"></i>
-                      </button>
+              <form class="form-contact contact_form" id="contactForm">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <div class="input-group mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="Enter email address"
+                          required
+                        />
+                        <div class="input-group-append">
+                          <button class="btn btn_1" type="submit"> <i class="ti-angle-right"></i></button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </form>
+              
               <div class="social_icon">
                 <a href="https://www.facebook.com/profile.php?id=61558264371843"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/prime-education-617849301/"><i class="fa fa-linkedin"></i></a>
@@ -1061,6 +1065,9 @@ fields of educational assistance, online education, offline education, etc.
     <!-- footer part end-->
 
     <!-- jquery plugins here-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js/sendEmail.js"></script>
+
     <!-- jquery -->
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
